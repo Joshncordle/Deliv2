@@ -30,7 +30,7 @@ namespace IterativeStatement
                     Console.ReadKey(true);
                 }
                
-                //Reacall else statement to preform loop if proper number is entered
+                //Recall else statement to preform loop if proper number is entered
                 else
                 {
                     //read the number entered by the user and the amount of times the loop will itereate
@@ -42,12 +42,15 @@ namespace IterativeStatement
                         Console.WriteLine("This is the current integer value in the loop: " + number.ToString());
                         number--;
                     }
+                    //Close the program 
                     Console.WriteLine("Press any key to close the program...");
                     Console.ReadKey(true);
                 }
             }
+            //Recall catch method to end the program if wrong data type is entered
             catch
             {
+                //Close the program
                 Console.WriteLine("Please only enter a number...");
                 Console.WriteLine("Press any key to close the program...");
                 Console.ReadKey(true);
